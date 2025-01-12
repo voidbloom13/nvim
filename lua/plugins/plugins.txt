@@ -1,0 +1,7 @@
+NEED:
+Treesitter
+Tokyonight
+Mason
+NeoTree
+Java and Python LSPs
+dependancies
