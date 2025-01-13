@@ -1,7 +1,8 @@
 NEED:
-Treesitter
-Tokyonight
 Mason
-NeoTree
-Java and Python LSPs
-dependancies
+- lspconfig and mason-lspconfig
+- none-ls
+
+Probably replace Comform with None-ls for formatting.
+
+Maybe find another colorscheme (or figure out how to make my own)
