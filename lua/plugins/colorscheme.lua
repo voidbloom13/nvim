@@ -1,0 +1,17 @@
+return {
+	"catppuccin/nvim",
+	lazy = false,
+	name = "catppuccin",
+	priority = 1000,
+	config = function()
+		require("catppuccin").setup({
+			transparent_background = true,
+		})
+		vim.cmd.colorscheme("catppuccin")
+		vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "cyan" })
+		vim.api.nvim_set_hl(0, "LineNr", { fg = "yellow" })
+		vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "cyan" })
+		vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE" })
+		vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+	end,
+}

@@ -1,3 +1,6 @@
+require("config/keybinds")
+require("config/opts")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -21,15 +24,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("config/keybinds")
-require("config/opts")
-
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 	},
-	install = { colorscheme = { "tokyonight-night" } },
 	checker = { enabled = true },
 })
 
-require("config/colorscheme")
+-- require("config/colorscheme")
