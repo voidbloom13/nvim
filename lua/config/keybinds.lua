@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- vim.keymap.set("i", "C-o", "<Esc><o><i>")
+-- vim.keymap.set("i", "C-O", "<Esc><O><i>")
 vim.keymap.set("n", "<leader>/", "<cmd>Neotree toggle<CR>")
 vim.keymap.set("n", "<leader>L", "<cmd>Lazy<CR>")
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Telescope find files" })
