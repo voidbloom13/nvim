@@ -20,7 +20,7 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "java_language_server",
+                    "jdtls",
                     "pyright",
                     "lemminx",
                 }, -- Ensure these LSPs are installed in Mason
@@ -35,7 +35,7 @@ return {
             local lspconfig = require("lspconfig")
             -- setup each lsp
             lspconfig.lua_ls.setup({ capabilites = capabilities })
-            lspconfig.java_language_server.setup({ capabilites = capabilities })
+            lspconfig.jdtls.setup({ capabilites = capabilities })
             lspconfig.pyright.setup({ capabilites = capabilities })
             lspconfig.lemminx.setup({ capabilites = capabilities })
 
